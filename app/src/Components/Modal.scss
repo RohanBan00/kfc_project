@@ -1,0 +1,158 @@
+* {
+  scrollbar-color: red white;
+  scrollbar-width: 7px;
+}
+
+.modalWindowContainer {
+  padding-top: 40px;
+}
+.modalWindow {
+  display: flex;
+  width: 700px;
+  height: calc(-80px + 100vh);
+  background-color: white;
+  overflow-y: scroll;
+  border-radius: 1rem;
+
+  & > .modalMain {
+    padding: 0 0;
+    width: 100%;
+
+    & > .modalMainTop {
+      padding-top: 24px;
+      display: flex;
+      width: 100%;
+      background-image: url(https://amrestcdn.azureedge.net/kfc-web-ordering/assets/img/common/modal-red-lines.svg);
+      background-repeat: no-repeat;
+      background-position: top center;
+
+      & > .topIcons {
+        width: 100%;
+        color: black;
+        background: white;
+        padding: none;
+        & > td {
+          padding: none;
+        }
+        & > button {
+          padding: none;
+        }
+        & > tr {
+          padding: none;
+        }
+      }
+    }
+    & > .modalMainBottom {
+      background-color: white;
+      width: 100%;
+      & > .productImageContainer {
+        display: flex;
+        justify-content: center;
+        & > .productImage {
+          display: flex;
+          width: 240px;
+          height: 240px;
+        }
+      }
+    }
+    & > .sliderPart {
+      background: #f7f6f6;
+      color: black;
+      font-weight: 700;
+      padding-top: 10px;
+      font-family: Brandon, Arial, Helvetica, sans-serif;
+      font-size: 18px;
+      line-height: 26px;
+      letter-spacing: 0.3px;
+      font-style: normal;
+
+      & > .titleText {
+        padding-left: 64px;
+        padding-top: 16px;
+        padding-bottom: 8px;
+      }
+    }
+    & > .slideshow {
+      background: #d9d9d9;
+      & > img {
+        background: white;
+      }
+    }
+  }
+  & > .modalBottom {
+  }
+}
+
+.productNameAndInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 64px;
+}
+
+.productName {
+  color: black;
+  font-weight: bold;
+  font-size: larger;
+  padding-left: 64px;
+  padding-bottom: 20px;
+}
+.productPrice {
+  color: black;
+  font-weight: bold;
+  font-size: larger;
+}
+.productInfo {
+  color: black;
+  font-weight: lighter;
+  padding-left: 64px;
+  padding-bottom: 20px;
+}
+
+.Quit {
+  background-color: white;
+  color: black;
+  border: none;
+  &:hover {
+    color: red;
+  }
+}
+
+.heartContainer {
+  border-width: 0;
+  &:hover {
+    border-width: 0;
+  }
+}
+.Heart {
+  background-color: white;
+  color: black;
+  padding: none;
+  border: none;
+}
+
+.img {
+  align-self: center;
+}
+
+.stering {
+  position: absolute;
+}
+
+.sliderButtons {
+  position: relative;
+  top: -430px;
+  left: 70%;
+  width: 160px;
+  height: 60px;
+  border-width: 0;
+}
+
+.sliderButtons button {
+  background-color: transparent;
+  color: black;
+  border: none;
+  &:hover {
+    color: red;
+  }
+}
